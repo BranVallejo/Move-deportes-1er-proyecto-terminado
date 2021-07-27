@@ -1,0 +1,63 @@
+/* Poster promo */
+
+.hero{
+    width: 90%;
+    margin: 0 auto;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.hero__picture{
+    margin-bottom: 1em;
+}
+.hero__img{
+    display: block;
+    width: 50%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.hero__text{
+    flex-basis: 40%;
+}
+
+.hero__title{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.hero__paragraph{
+    line-height: 1.5;
+    font-weight: 300;
+    padding: .7em 0;
+    font-size: 1.3rem;
+}
+
+.hero__cta{
+    display: inline-block;
+    color: #ffff;
+    text-decoration: none;
+    background: #0075f0;
+    padding: 20px 30px;
+    border-radius: 5%;
+}
+
+@media screen and (min-width:850px){
+    .hero{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .hero__picture{
+        flex-grow: 1;
+    }
+    .hero__img{
+        max-width: 60%;
+    }
+       
+}
+
+/* Termina poster promo */
+

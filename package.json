@@ -1,0 +1,13 @@
+{
+  "name": "entrega-4",
+  "version": "1.0.0",
+  "description": "Sass para la entrega 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilo.scss css/EstiloIndex.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "Bran Vallejo",
+  "license": "ISC"
+}

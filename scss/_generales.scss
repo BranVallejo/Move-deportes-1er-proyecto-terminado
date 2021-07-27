@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Hr para distinguir las sections*/
+hr {
+    border: none;
+    height: .1em;
+    color: rgb(252, 33, 33);
+    background-color: rgb(158, 24, 24); /* Modern Browsers */
+}
+/*Colores del fondo*/
+body{
+    background: white;
+}
+
+
+/*BARRA DE NAVEGACION*/
+.logoNav{
+    width: 5em;
+}
+
+/* FIN DE BARRA DE NAVEGACIÓN */
+  .TodoElResto{
+    margin-top:1em;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 93,75em;
+  }
+
+/*Estilos que en el desafío anterior estaban en HTML y ahora migran a CSS*/
+/*Texto*/
+.font{
+    font-family: 'Nunito', sans-serif;
+}
+h1{
+    color: rgb(0, 0, 0);
+    font-size: 4vw;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+}
+h2{
+    color: rgb(0, 0, 0);
+    font-size: 3em;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+}
+
+h3{
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 550;
+}
+p{
+    color: rgb(0, 0, 0);
+}
+
+
+/* Banner */
+.Banner{
+    background-image: url(../imagenes/BannerAdidas.jpg);
+    height: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: unset;
+}
+
+/*Query*/
+@media only screen and (max-width: 768px) {
+    body {
+            background-color: rgb(255, 255, 255)
+    }
+    h1{
+        font-size: 3em;
+        font-weight: 600;
+    }
+}
+@media only screen and (max-width: 1024px) {
+
+    h2 h3{
+        color: rgb(255, 255, 255);
+        font-size: 1em;
+        margin-top: 50px;
+    }
+}

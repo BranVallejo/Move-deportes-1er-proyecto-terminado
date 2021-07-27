@@ -1,0 +1,388 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*Hr para distinguir las sections*/
+hr {
+  border: none;
+  height: .1em;
+  color: #fc2121;
+  background-color: #9e1818;
+  /* Modern Browsers */ }
+
+/*Colores del fondo*/
+body {
+  background: white; }
+
+/*BARRA DE NAVEGACION*/
+.logoNav {
+  width: 5em; }
+
+/* FIN DE BARRA DE NAVEGACIÓN */
+.TodoElResto {
+  margin-top: 1em;
+  margin-left: 2%;
+  margin-right: 2%;
+  height: 93,75em; }
+
+/*Estilos que en el desafío anterior estaban en HTML y ahora migran a CSS*/
+/*Texto*/
+.font {
+  font-family: 'Nunito', sans-serif; }
+
+h1 {
+  color: black;
+  font-size: 4vw;
+  text-transform: uppercase;
+  font-family: 'Nunito', sans-serif; }
+
+h2 {
+  color: black;
+  font-size: 3em;
+  text-transform: uppercase;
+  font-family: 'Nunito', sans-serif; }
+
+h3 {
+  color: black;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 550; }
+
+p {
+  color: black; }
+
+/* Banner */
+.Banner {
+  background-image: url(../imagenes/BannerAdidas.jpg);
+  height: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: unset; }
+
+/*Query*/
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: white; }
+  h1 {
+    font-size: 3em;
+    font-weight: 600; } }
+
+@media only screen and (max-width: 1024px) {
+  h2 h3 {
+    color: white;
+    font-size: 1em;
+    margin-top: 50px; } }
+
+/* Poster promo */
+.hero {
+  width: 90%;
+  margin: 0 auto;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem; }
+
+.hero__picture {
+  margin-bottom: 1em; }
+
+.hero__img {
+  display: block;
+  width: 50%;
+  max-width: 500px;
+  margin: 0 auto; }
+
+.hero__text {
+  flex-basis: 40%; }
+
+.hero__title {
+  font-size: 2rem;
+  font-weight: 500; }
+
+.hero__paragraph {
+  line-height: 1.5;
+  font-weight: 300;
+  padding: .7em 0;
+  font-size: 1.3rem; }
+
+.hero__cta {
+  display: inline-block;
+  color: #ffff;
+  text-decoration: none;
+  background: #0075f0;
+  padding: 20px 30px;
+  border-radius: 5%; }
+
+@media screen and (min-width: 850px) {
+  .hero {
+    flex-direction: row;
+    align-items: center; }
+  .hero__picture {
+    flex-grow: 1; }
+  .hero__img {
+    max-width: 60%; } }
+
+/* Termina poster promo */
+/* Arrancan cards con productos */
+.cardsDiv {
+  margin-top: 3%;
+  margin-bottom: 5%;
+  height: auto;
+  width: auto;
+  display: grid;
+  grid-gap: 1em;
+  justify-items: center;
+  /* SHORTHAND */
+  grid: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr;
+  /* FILAS / COL */
+  grid-template-areas: "prod1" "prod2" "prod3" "prod4" "prod5" "prod6"; }
+
+.item1 {
+  grid-area: prod1;
+  box-shadow: .3em .3em .5em black; }
+
+.item2 {
+  grid-area: prod2;
+  box-shadow: .3em .3em .5em black; }
+
+.item3 {
+  grid-area: prod3;
+  box-shadow: .3em .3em .5em black; }
+
+.item4 {
+  grid-area: prod4;
+  box-shadow: .3em .3em .5em black; }
+
+.item5 {
+  grid-area: prod5;
+  box-shadow: .3em .3em .5em black; }
+
+.item6 {
+  grid-area: prod6;
+  box-shadow: .3em .3em .5em black; }
+
+.card-img-top {
+  color: black; }
+
+@media screen and (min-width: 1024px) {
+  .cardsDiv {
+    /* SHORTHAND */
+    grid: 1fr 1fr / 1fr 1fr 1fr;
+    /* FILAS / COL */
+    grid-template-areas: "prod1 prod2 prod3" "prod4 prod5 prod6"; } }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .cardsDiv {
+    /* SHORTHAND */
+    grid: 1fr 1fr 1fr / 1fr 1fr;
+    /* FILAS / COL */
+    grid-template-areas: "prod1 prod2" "prod3 prod4" "prod5 prod6"; } }
+
+/* Termina  cards con productos*/
+/* Empieza FORM para tu cuenta */
+.formulario {
+  background-image: url(../imagenes/MessiFondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh; }
+
+.form {
+  background-color: #15172b;
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 500px;
+  padding: 20px;
+  width: 320px; }
+
+.title {
+  color: #eee;
+  font-family: sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 30px; }
+
+.subtitle {
+  color: #eee;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px; }
+
+.input-container {
+  height: 50px;
+  position: relative;
+  width: 100%; }
+
+.ic1 {
+  margin-top: 40px; }
+
+.ic2 {
+  margin-top: 30px; }
+
+.input {
+  background-color: #303245;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%; }
+
+.cut {
+  background-color: #15172b;
+  border-radius: 10px;
+  height: 20px;
+  left: 20px;
+  position: absolute;
+  top: -20px;
+  transform: translateY(0);
+  transition: transform 200ms;
+  width: 8em; }
+
+.cut2 {
+  background-color: #15172b;
+  border-radius: 10px;
+  height: 20px;
+  left: 20px;
+  position: absolute;
+  top: -20px;
+  transform: translateY(0);
+  transition: transform 200ms;
+  width: 5em; }
+
+.cut-short {
+  width: 50px; }
+
+.input:focus ~ .cut,
+.input:not(:placeholder-shown) ~ .cut {
+  transform: translateY(8px); }
+
+.input:focus ~ .cut2,
+.input:not(:placeholder-shown) ~ .cut2 {
+  transform: translateY(8px); }
+
+.placeholder {
+  color: #65657b;
+  font-family: sans-serif;
+  left: 20px;
+  line-height: 14px;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 20px; }
+
+.input:focus ~ .placeholder,
+.input:not(:placeholder-shown) ~ .placeholder {
+  transform: translateY(-30px) translateX(10px) scale(0.75); }
+
+.input:not(:placeholder-shown) ~ .placeholder {
+  color: #808097; }
+
+.input:focus ~ .placeholder {
+  color: #dc2f55; }
+
+.submit {
+  background-color: #08d;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  margin-top: 38px;
+  outline: 0;
+  text-align: center;
+  width: 100%; }
+
+.submit:active {
+  background-color: #06b; }
+
+/* Termina FORM para tu cuenta */
+/* FOOTER */
+.footer-dark {
+  padding: 50px 0;
+  color: #f0f9ff;
+  background-color: #282d32; }
+
+.footer-dark h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 16px; }
+
+.footer-dark ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 0; }
+
+.footer-dark ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.6; }
+
+.footer-dark ul a:hover {
+  opacity: 0.8; }
+
+@media (max-width: 767px) {
+  .footer-dark .item:not(.social) {
+    text-align: center;
+    padding-bottom: 20px; } }
+
+.footer-dark .item.text {
+  margin-bottom: 36px; }
+
+@media (max-width: 767px) {
+  .footer-dark .item.text {
+    margin-bottom: 0; } }
+
+.footer-dark .item.text p {
+  opacity: 0.6;
+  margin-bottom: 0; }
+
+.footer-dark .item.social {
+  text-align: center; }
+
+@media (max-width: 991px) {
+  .footer-dark .item.social {
+    text-align: center;
+    margin-top: 20px; } }
+
+.footer-dark .item.social > a {
+  font-size: 20px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+  margin: 0 8px;
+  color: #fff;
+  opacity: 0.75; }
+
+.footer-dark .item.social > a:hover {
+  opacity: 0.9; }
+
+.footer-dark .copyright {
+  text-align: center;
+  padding-top: 24px;
+  opacity: 0.3;
+  font-size: 13px;
+  margin-bottom: 0; }
